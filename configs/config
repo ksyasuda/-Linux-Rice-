@@ -47,7 +47,7 @@ floating_modifier Mod1
 
 # start a terminal
 # bindsym Mod1+Return exec i3-sensible-terminal
-bindsym Mod1+Return exec --no-startup-id konsole
+bindsym Mod1+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -63,7 +63,7 @@ bindsym Mod1+Shift+q kill
 set $menu --no-startup-id qdbus org.kde.krunner /App display
 bindsym Mod1+d exec $menu
 # bindsym Mod1+m exec dmenu_run -p Freudmenu:
-bindsym Mod1+m exec --no-startup-id i3-dmenu-desktop
+bindsym Mod1+m exec --no-startup-id ~/scripts/dmenu.sh 
 
 # change focus
 bindsym Mod1+$left focus left
@@ -368,12 +368,13 @@ assign [class="^Code$"] "3: ﬏"
 assign [class="^plasmawindowed$"] "4: "
 
 # launch apps on startup
-exec --no-startup-id konsole
-exec --no-startup-id firefox
+exec --no-startup-id alacritty
+# exec --no-startup-id firefox
 # exec --no-startup-id spotify
 # exec --no-startup-id chromium
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/i3/scripts/launch.sh
 
 ##### i3-gaps ##############
 #for_window [class=".*"] border pixel 2
