@@ -373,7 +373,7 @@ exec --no-startup-id alacritty
 # exec --no-startup-id spotify
 # exec --no-startup-id chromium
 
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh exec_always --no-startup-id $HOME/i3/scripts/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh exec_always --no-startup-id $HOME/i3/scripts/launch.sh
 
 ##### i3-gaps ##############
 #for_window [class=".*"] border pixel 2
