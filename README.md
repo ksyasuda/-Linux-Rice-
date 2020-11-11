@@ -10,7 +10,7 @@ A collection of configuration files for my Linux system
 
 ---
 
-## 🍚 [The Rice]  🍚
+## 🍚 The Rice  🍚
 
 - OS: Arch Linux
 - DE: KDE Plasma
