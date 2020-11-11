@@ -388,7 +388,7 @@ exec_always --no-startup-id $HOME/i3/scripts/launch.sh
 
 #smart_borders on
 #smart_borders no_gaps
-border_radius 11
+# border_radius 11
 
 ## -----------------------------------------------------------
 ## BORDERS
@@ -398,7 +398,10 @@ bindsym Mod1+y border pixel 3
 bindsym Mod1+t border normal 3
 bindsym Mod1+u border none
 for_window [class=".*"] focus parent, title_format <span foreground="#a8d385">%title</span>, focus child
-for_window [class=".*"] border normal 3
+# Make all windows have title and border
+# for_window [class=".*"] border normal 3
+# All windows have just border
+for_window [class=".*"] border pixel 3
 title_align center
 for_window[workspace="4: "] border pixel 3 
 for_window[class="^Spotify$"] border pixel 3
