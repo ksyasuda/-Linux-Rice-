@@ -44,12 +44,13 @@ rofi -no-lazy-grab -show drun \
 -line-padding 10 \
 -padding 60 \
 -width 20 \
+-height 50 \
 -xoffset 10 -yoffset 40 \
 -location 1 \
 -fullscreen \
 -columns 4 \
 -show-icons -icon-theme "Qogir-dark" \
--font "FiraCode Nerd Font 14" \
+-font "FiraCode Nerd Font 34" \
 -markup \
 -color-enabled true \
 -color-window "$BACKGROUND,$BORDER,$SEPARATOR" \
