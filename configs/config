@@ -363,8 +363,9 @@ bindsym Mod1+y border pixel 3
 bindsym Mod1+u border none
 
 # set menu to the krunner
-# set $menu --no-startup-id qdbus org.kde.krunner /App display
-# bindsym Mod1+d exec $menu
+set $menu --no-startup-id qdbus org.kde.krunner /App display
+bindsym Mod1+m exec $menu
+
 # run dmenu
 bindsym Mod1+d exec --no-startup-id ~/scripts/dmenu.sh 
 
