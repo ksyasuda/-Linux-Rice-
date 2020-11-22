@@ -5,6 +5,7 @@ from datetime import date
 digits = ['一', '二', '三', '四', '五', '六', '七', '八', '九']
 
 def get_thousands(num):
+    """Return the number of thousands in the year"""
     if num == 0:
         return '' 
     sen = '千'
@@ -17,6 +18,7 @@ def get_thousands(num):
     return sen 
 
 def get_hundreds(num):
+    """Return the number of hundreds in the year"""
     if num == 0:
         return '' 
     j_str = ''
@@ -28,6 +30,7 @@ def get_hundreds(num):
     return hyaku 
 
 def get_tens(num):
+    """Return the number of tens in the year"""
     if num == 0:
         return '' 
     j_str = ''
@@ -39,12 +42,14 @@ def get_tens(num):
     return juu
 
 def get_ones(num):
+    """Return the number of ones in the year"""
     if num == 0:
         return '' 
     return digits[num - 1]
 
 
 def parse_year(year):
+    """Parse the year into its separate parts and return an array of the parts"""
     multipliers = [1000, 100, 10, 1]
     places = []
     count = 0
@@ -71,6 +76,7 @@ day = today.day
 month_arr = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
 day_arr = ['一日', 'ニ日', '三日', '四日', '五日', '六日', '七日', '八日', '九日', '十日', '十一日', '十二日', '十三日', '十四日', '十五日', '十六日', '十七日', '十八日', '十九日', '二十日', '二十一日', '二十二日', '二十三日', '二十四日', '二十五日', '二十六日', '二十七日', '二十八日', '二十九日', '三十日', '三十一日']
 
+# month - 1 cuz 0-indexed arrs
 j_month = month_arr[month - 1]
 j_day = day_arr[day - 1]
 j_year = parse_year(year)
