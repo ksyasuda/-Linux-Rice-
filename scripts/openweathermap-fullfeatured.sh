@@ -53,7 +53,8 @@ get_duration() {
 }
 
 KEY="6865df0d489817348e4c7941aaa6cdeb"
-CITY="Ann Arbor"
+# CITY="Ann Arbor"
+CITY="Los Angeles"
 UNITS="imperial"
 SYMBOL="°"
 
