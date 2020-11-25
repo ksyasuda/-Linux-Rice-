@@ -2,23 +2,25 @@
 
 ---
 
-A collection of configuration files for my Linux system
+A collection of configuration files for my Linux systems
 
 ## My Linux Rice (Arch Linux btw...)
 
-![myarch5.1 pic](https://imgur.com/0pkvR3g.png)
+![myarch5.1 pic](https://imgur.com/u1aJoFD.png)
 
 ---
 
 ## 🍚 The Rice  🍚
 
-- OS: Arch Linux
+- OS: Arch Linux (Arcolinux)
 - DE: KDE Plasma
 - Window Manager: [i3-gaps](https://www.archlinux.org/packages/community/x86_64/i3-gaps/)
 - Status Bar: [polybar](https://aur.archlinux.org/packages/polybar/ "polybar AUR page")
-- Compositor: [ibhagwan picom fork](https://github.com/ibhagwan/picom)
-- Terminal emulator: [alacritty](https://github.com/alacritty/alacritty)
-- Text Editors: [doom-emacs](https://github.com/hlissner/doom-emacs "doom-emacs github page") and [vscode](https://aur.archlinux.org/packages/visual-studio-code-bin/?O=10&PP=10 "vscode AUR page")
+- Compositor: [ibhagwan's picom fork](https://github.com/ibhagwan/picom "github page for the picom fork")
+- Terminal Emulator: [alacritty](https://github.com/alacritty/alacritty "Alacritty github page")
+- Text Editor: [Customized Vim](https://www.vim.org/ "Vim home page")
+  - My `.vimrc` can be found [here](https://github.com/ksyasuda/dotfiles/blob/dev/.vimrc)
+  - The rest of the dotfiles can be found in [this repository](https://github.com/ksyasuda/dotfiles "My dotfiles repository")
 - Audio Visualizer: [cava](https://aur.archlinux.org/packages/cava-git/ "cava AUR page")
-- System Monitor: [bpytop](https://github.com/aristocratos/bpytop)
+- System Monitor: [bpytop](https://github.com/aristocratos/bpytop "github page for bpytop")
 - Image viewer/Wallpaper manager: [feh](https://wiki.archlinux.org/index.php/Feh "Feh Arch Wiki page")
