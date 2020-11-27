@@ -365,8 +365,8 @@ bindsym Mod1+y border pixel 3
 bindsym Mod1+u border none
 
 # set menu to the krunner
-set $menu --no-startup-id qdbus org.kde.krunner /App display
-bindsym Mod1+m exec $menu
+# set $menu --no-startup-id qdbus org.kde.krunner /App display
+# bindsym Mod1+m exec $menu
 
 # run dmenu
 bindsym Mod1+d exec --no-startup-id ~/scripts/dmenu.sh 
@@ -375,7 +375,10 @@ bindsym Mod1+d exec --no-startup-id ~/scripts/dmenu.sh
 bindsym Mod1+o exec --no-startup-id $HOME/scripts/menu_full
 # bindsym Mod1+d exec --no-startup-id /home/sudacode/scripts/menu
 
+# bind the windows key to menu
 bindsym Super_L exec --no-startup-id $HOME/scripts/menu
+
+bindsym Mod1+m exec --no-startup-id $HOME/scripts/flameshot_full.sh
 
 ## ASSIGN TO WORKSPACES
 assign [class="^firefox$"] "2: "
