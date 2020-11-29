@@ -352,7 +352,7 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
 # for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 1600px, move down 450px
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position center, move down 908px, resize set 600 200
+for_window [class="plasmashell" window_type="notification"] floating enable, move down 406, move right 765, resize set 400 150, border none
 # no_focus [class="plasmashell" window_type="notification"]
 for_window [class="Steam"] floating enable
 
