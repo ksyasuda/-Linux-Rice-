@@ -378,7 +378,11 @@ bindsym Mod1+o exec --no-startup-id $HOME/i3/scripts/menu_full_desktop
 # bind the windows key to menu
 bindsym Super_L exec --no-startup-id $HOME/scripts/menu-desktop
 
+# Bind Alt+m to take screenshot with flameshot
 bindsym Mod1+m exec --no-startup-id $HOME/scripts/flameshot_full.sh
+
+# bind Alt+p to run pavucontrol script
+bindsym Mod1+p exec --no-startup-id $HOME/scripts/pavucontrol.sh
 
 ## ASSIGN TO WORKSPACES
 assign [class="^firefox$"] "2: "
@@ -394,7 +398,7 @@ exec --no-startup-id /usr/lib/pam_kwallet_init
 # launch polybar on startup
 exec_always --no-startup-id /home/sudacode/i3/scripts/launch_desktop.sh
 # launch picom in the background
-exec_always --no-startup-id /home/sudacode/scripts/picom.sh &
+exec_always --no-startup-id /home/sudacode/scripts/picom.sh
 # run wallpaper script to set random wallpaper
 exec_always --no-startup-id /home/sudacode/scripts/wallpaper.sh
 # start the calendar and todolist plasmoids

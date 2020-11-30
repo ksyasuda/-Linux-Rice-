@@ -378,7 +378,11 @@ bindsym Mod1+o exec --no-startup-id $HOME/scripts/menu_full
 # bind the windows key to menu
 bindsym Super_L exec --no-startup-id $HOME/scripts/menu
 
+# bind Alt m to flameshot_full script
 bindsym Mod1+m exec --no-startup-id $HOME/scripts/flameshot_full.sh
+
+# launch pavucontrol with Alt+p
+bindsym Mod1+p exec --no-startup-id $HOME/scripts/pavucontrol.sh
 
 ## ASSIGN TO WORKSPACES
 assign [class="^firefox$"] "2: "
