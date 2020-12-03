@@ -10,7 +10,7 @@ A collection of configuration files for my Linux systems
 
 ---
 
-## ﳨ The Riceﳨ 
+## ﳨ  The Rice ﳨ 
 
 - OS: Arch Linux (Arcolinux)
 - DE: KDE Plasma
