@@ -10,14 +10,14 @@ A collection of configuration files for my Linux systems
 
 ---
 
-## 🍚 The Rice  🍚
+## <i class="nf nf-mdi-rice"></i> The Rice <i class="nf nf-mdi-rice"></i>
 
 - OS: Arch Linux (Arcolinux)
 - DE: KDE Plasma
 - Window Manager: [i3-gaps](https://www.archlinux.org/packages/community/x86_64/i3-gaps/)
 - Status Bar: [polybar](https://aur.archlinux.org/packages/polybar/ "polybar AUR page")
 - Compositor: [ibhagwan's picom fork](https://github.com/ibhagwan/picom "github page for the picom fork")
-- Terminal Emulator: [alacritty](https://github.com/alacritty/alacritty "Alacritty github page")
+- Terminal Emulator: [alacritty-ligatures](https://aur.archlinux.org/packages/alacritty-ligatures/)
 - Text Editor: [Customized Vim](https://www.vim.org/ "Vim home page")
   - My `.vimrc` can be found [here](https://github.com/ksyasuda/dotfiles/blob/dev/.vimrc)
   - The rest of the dotfiles can be found in [this repository](https://github.com/ksyasuda/dotfiles "My dotfiles repository")
