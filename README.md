@@ -10,7 +10,7 @@ A collection of configuration files for my Linux systems
 
 ---
 
-## <i class="nf nf-mdi-rice"></i> The Rice <i class="nf nf-mdi-rice"></i>
+## ﳨ The Riceﳨ 
 
 - OS: Arch Linux (Arcolinux)
 - DE: KDE Plasma
