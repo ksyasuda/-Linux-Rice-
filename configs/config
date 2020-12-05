@@ -356,6 +356,8 @@ for_window [class="plasmashell" window_type="notification"] floating enable, bor
 # no_focus [class="plasmashell" window_type="notification"]
 for_window [class="Steam"] floating enable
 
+for_window [class="plasmawindowed" title="TodoList"] resize set 1200 2000
+
 ## CUSTOM KEYBINDS
 # start rofi tabswitcher
 bindsym Mod1+ISO_Left_Tab exec --no-startup-id $HOME/scripts/tabswitcher.sh
@@ -404,3 +406,4 @@ exec_always --no-startup-id /home/sudacode/scripts/wallpaper.sh
 # start the calendar and todolist plasmoids
 exec --no-startup-id ~/scripts/calendar.sh
 exec --no-startup-id ~/scripts/todo.sh
+
