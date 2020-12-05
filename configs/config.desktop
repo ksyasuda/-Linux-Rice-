@@ -403,3 +403,6 @@ exec_always --no-startup-id /home/sudacode/scripts/wallpaper.sh
 # start the calendar and todolist plasmoids
 exec --no-startup-id ~/scripts/calendar.sh
 exec --no-startup-id ~/scripts/todo.sh
+
+# for_window [class='plasmawindowed' title='TodoList'] resize set 500 500
+for_window [class="plasmawindowed" title="TodoList"] resize set 600 
