@@ -115,16 +115,16 @@ bindsym $mod+a focus parent
 # set $ws2 "2"
 # set $ws3 "3"
 # set $ws4 "4"
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
+set $ws1 "1: ﮷"
+set $ws2 "2: "
+set $ws3 "3"
 set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: ﬏"
 set $ws8 "8"
-set $ws9 "9: "
-set $ws10 "10"
+set $ws9 "9"
+set $ws10 "0"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -388,7 +388,7 @@ assign [class="^firefox$"] $ws6
 assign [class="^Code$"] $ws7 
 assign [class="^plasmawindowed$"] $ws4 
 # Assign and move spotify to workspace 9
-for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws9
+for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws2
 
 # Unlock KWallet
 exec --no-startup-id /usr/lib/pam_kwallet_init
@@ -406,6 +406,7 @@ exec --no-startup-id ~/scripts/todo.sh
 
 # for_window [class='plasmawindowed' title='TodoList'] resize set 500 500
 for_window [class="plasmawindowed" title="TodoList"] resize set 600 
+for_window [title="Android Emulator - Pixel_3a_API_30_x86:5554"] floating enable, border none
 
 # workspaces for dual monitors
 workspace $ws10 output HDMI-0
@@ -418,4 +419,3 @@ workspace $ws6 output DP-2
 workspace $ws7 output DP-2
 workspace $ws8 output DP-2
 workspace $ws9 output DP-2
-
