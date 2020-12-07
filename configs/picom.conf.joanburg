@@ -201,11 +201,11 @@ opacity-rule = [
   "100:class_g    = 'code-oss'",
   # "100:class_g    = 'firefox'",
   # Fullscreen applications get not transparency
-  "100:_NET_WM_STATE@[0]:32a = '_NET_WM_STATE_FULLSCREEN'",
-  "100:_NET_WM_STATE@[1]:32a = '_NET_WM_STATE_FULLSCREEN'",
-  "100:_NET_WM_STATE@[2]:32a = '_NET_WM_STATE_FULLSCREEN'",
-  "100:_NET_WM_STATE@[3]:32a = '_NET_WM_STATE_FULLSCREEN'",
-  "100:_NET_WM_STATE@[4]:32a = '_NET_WM_STATE_FULLSCREEN'",
+  "100:_NET_WM_STATE@[0]:32a    = '_NET_WM_STATE_FULLSCREEN'",
+  "100:_NET_WM_STATE@[1]:32a    = '_NET_WM_STATE_FULLSCREEN'",
+  "100:_NET_WM_STATE@[2]:32a    = '_NET_WM_STATE_FULLSCREEN'",
+  "100:_NET_WM_STATE@[3]:32a    = '_NET_WM_STATE_FULLSCREEN'",
+  "100:_NET_WM_STATE@[4]:32a    = '_NET_WM_STATE_FULLSCREEN'",
 ];
 
 
@@ -407,7 +407,7 @@ use-damage = false
 # calls are finished before picom starts drawing. Needed on nvidia-drivers 
 # with GLX backend for some users.
 #
-# xrender-sync-fence = false
+xrender-sync-fence = true
 
 # GLX backend: Use specified GLSL fragment shader for rendering window contents. 
 # See `compton-default-fshader-win.glsl` and `compton-fake-transparency-fshader-win.glsl` 
