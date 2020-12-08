@@ -199,6 +199,7 @@ opacity-rule = [
   "100:class_g    = 'Alacritty'",
   "100:class_g     = 'Polybar'",
   "100:class_g    = 'code-oss'",
+  "100:class_g    = 'jetbrains-studio'",
   # "100:class_g    = 'firefox'",
   # Fullscreen applications get not transparency
   "100:_NET_WM_STATE@[0]:32a    = '_NET_WM_STATE_FULLSCREEN'",
