@@ -406,3 +406,5 @@ exec --no-startup-id ~/scripts/calendar.sh
 exec --no-startup-id ~/scripts/todo.sh
 
 for_window [class="plasmawindowed" title="TodoList"] resize set 1200 2000
+for_window [class="eecs285-proj3-ksyasuda-WheelOfFortune"] floating enable
+for_window [title="Android Emulator - Pixel_3a_API_30_x86:5554"] floating enable, border none
