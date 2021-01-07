@@ -327,7 +327,7 @@ for_window [class=".*"] border pixel 3
 
 # make calendar, todo, and spotify always only have border 3 pixels
 for_window[workspace="4: "] border pixel 3 
-for_window[class="^Spotify$"] border pixel 3, gaps inner 60
+for_window[class="^Spotify$"] border none, gaps inner 60
 
 # if title, make the title center aligned
 title_align center
