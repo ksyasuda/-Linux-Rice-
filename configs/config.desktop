@@ -115,15 +115,15 @@ bindsym $mod+a focus parent
 # set $ws2 "2"
 # set $ws3 "3"
 # set $ws4 "4"
-set $ws1 "1: ﮷"
-set $ws2 "2: "
-set $ws3 "3"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: ﬏"
 set $ws4 "4: "
-set $ws5 "5: "
-set $ws6 "6: "
-set $ws7 "7: ﬏"
+set $ws5 "5: ﮷"
+set $ws6 "6"
+set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9: "
 set $ws10 "0"
 
 # switch to workspace
@@ -354,6 +354,7 @@ for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] floating enable, move down 406, move right 765, resize set 400 150, border none
 # no_focus [class="plasmashell" window_type="notification"]
 for_window [class="Steam"] floating enable
+for_window [class="plasmawindowed"] border none
 
 ## CUSTOM KEYBINDS
 # start rofi tabswitcher
@@ -384,20 +385,26 @@ bindsym Mod1+m exec --no-startup-id $HOME/scripts/flameshot_full.sh
 bindsym Mod1+p exec --no-startup-id $HOME/scripts/pavucontrol.sh
 
 ## ASSIGN TO WORKSPACES
-assign [class="^firefox$"] $ws6 
-assign [class="^Code$"] $ws7 
+# assign [class="^firefox$"] $ws6 
+# assign [class="^Code$"] $ws7 
+# assign [class="^plasmawindowed$"] $ws4 
+# # Assign and move spotify to workspace 9
+# for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws2
+
+assign [class="^firefox$"] $ws2 
+assign [class="^Code$"] $ws3 
 assign [class="^plasmawindowed$"] $ws4 
 # Assign and move spotify to workspace 9
-for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws2
+for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws9
 
 # Unlock KWallet
-exec --no-startup-id /usr/lib/pam_kwallet_init
+# exec --no-startup-id /usr/lib/pam_kwallet_init
 
 ## ON STARTUP
 # launch polybar on startup
 exec_always --no-startup-id /home/sudacode/i3/scripts/launch_desktop.sh
 # launch picom in the background
-exec_always --no-startup-id /home/sudacode/scripts/picom.sh
+# exec_always --no-startup-id /home/sudacode/scripts/picom.sh
 # run wallpaper script to set random wallpaper
 exec_always --no-startup-id /home/sudacode/scripts/wallpaper.sh
 # start the calendar and todolist plasmoids
@@ -410,13 +417,13 @@ for_window [class="plasmawindowed" title="TodoList"] resize set 600
 for_window [title="Android Emulator - Pixel_3a_API_30:5554"] floating enable, border none
 
 # workspaces for dual monitors
-workspace $ws10 output HDMI-0
-workspace $ws1 output HDMI-0
-workspace $ws2 output HDMI-0
-workspace $ws1 output HDMI-0
-workspace $ws4 output HDMI-0
-workspace $ws5 output DP-2
-workspace $ws6 output DP-2
-workspace $ws7 output DP-2
-workspace $ws8 output DP-2
-workspace $ws9 output DP-2
+# workspace $ws10 output HDMI-0
+# workspace $ws1 output HDMI-0
+# workspace $ws2 output HDMI-0
+# workspace $ws1 output HDMI-0
+# workspace $ws4 output HDMI-0
+# workspace $ws5 output DP-2
+# workspace $ws6 output DP-2
+# workspace $ws7 output DP-2
+# workspace $ws8 output DP-2
+# workspace $ws9 output DP-2
