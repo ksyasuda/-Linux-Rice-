@@ -285,12 +285,12 @@ blur-background-exclude = [
 #
 experimental-backends = true;
 backend = "glx";
-#backend = "xrender";
+# backend = "xrender";
 
 
 # Enable/disable VSync.
 # vsync = false
-vsync = true
+vsync = false
 
 # Enable remote control via D-Bus. See the *D-BUS API* section below for more details.
 # dbus = false
@@ -453,7 +453,7 @@ log-level = "info";
 # logs might still be written to the stderr. 
 # When setting this option from the config file, it is recommended to use an absolute path.
 #
-# log-file = '/path/to/your/log/file'
+# log-file = '~/.picom.log'
 
 # Show all X errors (for debugging)
 # show-all-xerrors = false
