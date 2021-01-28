@@ -384,6 +384,18 @@ bindsym Mod1+m exec --no-startup-id $HOME/scripts/flameshot_full.sh
 # bind Alt+p to run pavucontrol script
 bindsym Mod1+p exec --no-startup-id $HOME/scripts/pavucontrol.sh
 
+# Bind F7 to Next Song
+bindsym XF86AudioPrev exec --no-startup-id $HOME/scripts/spotify-controls.sh -b
+# Bind F8 to Pause/Play
+bindsym XF86AudioPlay exec --no-startup-id $HOME/scripts/spotify-controls.sh -p
+# Bind F9 to Next Song
+bindsym XF86AudioNext exec --no-startup-id $HOME/scripts/spotify-controls.sh -n
+
+# get a new wallpaper
+bindsym Control+Mod1+n exec --no-startup-id $HOME/scripts/new-wallpaper.sh
+
+bindsym Control+Mod1+f exec --no-startup-id firefox
+
 ## ASSIGN TO WORKSPACES
 # assign [class="^firefox$"] $ws6 
 # assign [class="^Code$"] $ws7 
