@@ -8,9 +8,9 @@ fi
 checkPlaying=$(mpc status | grep playing)
 icon=''
 if [[ $checkPlaying == '' ]]; then
-	icon=''
-else
 	icon='契'
+else
+	icon=''
 fi
 
 echo $icon $checkRunning
