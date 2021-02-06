@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 
-set -Eeuo pipefail
+set -euo pipefail
 
-if ! $(playerctl status &>/dev/null); then 
-	exit 1
-fi
+check_player() {
+	if ! playerctl status >/dev/null 2>&1; then
+		exit 1
+	fi
+	return 0
+}
 
+check_player
 
 ICON=''
 
 get_icon() {
+	check_player
 	STATUS=$(playerctl status)
 	if [[ $STATUS == "Playing" ]]; then
 		ICON=' '
@@ -33,8 +38,8 @@ do
 		s)
 			get_icon
 			TITLE=$(playerctl metadata title)
-			printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3 --update-check \
-				true "playerctl metadata title"
+			printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3\
+				--update-check true "playerctl metadata title" &
 			;;
 		b)
 			printf "玲\n"
@@ -43,6 +48,7 @@ do
 			printf "怜\n"
 			;;
 		?)
+			printf "invalid arg\n"
 			exit 1
 			;;
 	esac
