@@ -1,28 +1,17 @@
 #!/usr/bin/env bash
 
-## depreciated use zscroll now
+## display currently playing/paused song with zscroll
+## no output when mpd is stopped
 
-checkRunning=$(mpc current)
-if [[ $checkRunning == '' ]]; then
+if ! mpc >/dev/null 2>&1; then
 	exit 1
+else (
+	mpc current | zscroll --delay 0.3 \
+			--match-command "mpc status" \
+			--match-text "playing" "--before-text ' '" \
+			--match-text "paused" "--before-text '契 ' --scroll 0" \
+			--update-check true "mpc current" &
+) &
 fi
-# 
-# checkPlaying=$(mpc status | grep playing)
-# icon=''
-# if [[ $checkPlaying == '' ]]; then
-# 	icon='契'
-# else
-# 	icon=''
-# fi
-# echo $icon $checkRunning
-# "契"
-# ""
-# "玲"
-# "怜"
 
-mpc current | zscroll --delay 0.3 \
-		--match-command "mpc status" \
-		--match-text "playing" "--before-text ' '" \
-		--match-text "paused" "--before-text '契 ' --scroll 0" \
-		--update-check true "mpc current" &
-wait
+mpc idle >/dev/null
