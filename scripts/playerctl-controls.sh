@@ -3,16 +3,15 @@
 set -euo pipefail
 
 check_player() {
-	if ! playerctl status >/dev/null 2>&1; then
+	if ! $(playerctl status >/dev/null 2>&1); then
+		printf '\n'
 		exit 1
 	fi
-	return 0
 }
 
 check_player
 
 ICON=''
-
 get_icon() {
 	check_player
 	STATUS=$(playerctl status)
@@ -38,8 +37,9 @@ do
 		s)
 			get_icon
 			TITLE=$(playerctl metadata title)
-			printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3\ 
-				--update-check true "playerctl metadata title"
+			printf "$ICON $TITLE\n" | cut -b  -55
+			# printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3\ 
+			# 	--update-check true "playerctl metadata title"
 			;;
 		b)
 			printf "玲\n"
