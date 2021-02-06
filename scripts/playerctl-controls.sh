@@ -38,8 +38,8 @@ do
 		s)
 			get_icon
 			TITLE=$(playerctl metadata title)
-			printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3\
-				--update-check true "playerctl metadata title" &
+			printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3\ 
+				--update-check true "playerctl metadata title"
 			;;
 		b)
 			printf "玲\n"
