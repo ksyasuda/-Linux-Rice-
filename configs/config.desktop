@@ -419,7 +419,8 @@ for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws9
 # launch polybar on startup
 exec_always --no-startup-id /home/sudacode/i3/scripts/launch_desktop.sh
 # launch picom in the background
-exec_always --no-startup-id /home/sudacode/scripts/picom.sh
+## Picom taking up too much cpu right now
+# exec_always --no-startup-id /home/sudacode/scripts/picom.sh
 # run wallpaper script to set random wallpaper
 exec_always --no-startup-id /home/sudacode/scripts/wallpaper.sh
 # start the calendar and todolist plasmoids
