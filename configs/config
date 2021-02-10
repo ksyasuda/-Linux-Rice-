@@ -399,6 +399,9 @@ bindsym XF86AudioNext exec --no-startup-id $HOME/scripts/spotify-controls.sh -n;
 # Bind Alt n to open ncmpcpp
 bindsym Mod1+n exec --no-startup-id alacritty -e ncmpcpp
 
+# Bind Alt b to launch bpytop
+bindsym Mod1+b exec --no-startup-id alacritty -e bpytop
+
 # bindsym XF86AudioPrev exec --no-startup-id $HOME/i3/scripts/music-controls.sh -p
 # Bind F8 to Pause/Play
 # bindsym XF86AudioPlay exec --no-startup-id $HOME/i3/scripts/music-controls.sh -t
