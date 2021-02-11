@@ -391,6 +391,9 @@ bindsym XF86AudioPlay exec --no-startup-id $HOME/scripts/spotify-controls.sh -p;
 # Bind F9 to Next Song
 bindsym XF86AudioNext exec --no-startup-id $HOME/scripts/spotify-controls.sh -n; exec --no-startup-id $HOME/i3/scripts/music-controls.sh -p
 
+# bind alt b to bpytop
+bindsym Mod1+b exec --no-startup-id alacritty -e bpytop
+
 # bind alt n to ncmpcpp
 bindsym Mod1+n exec --no-startup-id alacritty -e ncmpcpp
 
