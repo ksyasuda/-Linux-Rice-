@@ -35,11 +35,13 @@ do
 			playerctl play-pause
 			;;
 		s)
-			get_icon
-			TITLE=$(playerctl metadata title)
-			printf "$ICON $TITLE\n" | cut -b  -55
-			# printf "$TITLE\n" | zscroll  --before-text "$ICON" --delay 0.3\ 
-			# 	--update-check true "playerctl metadata title"
+			# get_icon
+			# TITLE=$(playerctl metadata title)
+			# printf "$ICON $TITLE\n" | cut -b  -55
+			zscroll --delay 0.3 \
+				--match-command "get-player-title" \
+				--update-check true "get-player-title" &
+			wait
 			;;
 		b)
 			printf "玲\n"
