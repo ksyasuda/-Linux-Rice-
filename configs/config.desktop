@@ -385,11 +385,11 @@ bindsym Mod1+m exec --no-startup-id $HOME/scripts/flameshot_full.sh
 bindsym Mod1+p exec --no-startup-id $HOME/scripts/pavucontrol.sh
 
 # Bind F7 to Next Song
-bindsym XF86AudioPrev exec --no-startup-id $HOME/scripts/spotify-controls.sh -b; exec --no-startup-id $HOME/i3/scripts/music-controls.sh -n
+bindsym XF86AudioPrev exec --no-startup-id $HOME/scripts/spotify-controls.sh -b; exec --no-startup-id $HOME/i3/scripts/music-controls.sh -p
 # Bind F8 to Pause/Play
 bindsym XF86AudioPlay exec --no-startup-id $HOME/scripts/spotify-controls.sh -p; exec --no-startup-id $HOME/i3/scripts/music-controls.sh -t
 # Bind F9 to Next Song
-bindsym XF86AudioNext exec --no-startup-id $HOME/scripts/spotify-controls.sh -n; exec --no-startup-id $HOME/i3/scripts/music-controls.sh -p
+bindsym XF86AudioNext exec --no-startup-id $HOME/scripts/spotify-controls.sh -n; exec --no-startup-id $HOME/i3/scripts/music-controls.sh -n
 
 # bind alt b to bpytop
 bindsym Mod1+b exec --no-startup-id alacritty -e bpytop
