@@ -2,7 +2,7 @@
 
 STAT=`playerctl status 2>/dev/null`
 if [[ $STAT == "" ]]; then
-    printf "\n"
+    printf " "
 elif [[ $(playerctl status 2>/dev/null) == "Playing" ]]; then
     printf "Playing: $(playerctl metadata title)\n"
 else

@@ -35,13 +35,13 @@ do
 			playerctl play-pause
 			;;
 		s)
-			get_icon
+			# get_icon
 			# TITLE=$(playerctl metadata title)
 			# printf "$ICON $TITLE\n" | cut -b  -55
 			zscroll --delay 0.3 \
 				--match-command "get-player-title" \
-				--match-text "Paused:" "-b ' '  -s 0" \
-				--match-text "Playing:" "-b '契 ' -s 1" \
+				--match-text "Paused:*" "-b '契 '  -s 0" \
+				--match-text "Playing:*" "-b ' ' -s 1" \
 				--update-check true "get-player-title" &
 			wait
 			;;
